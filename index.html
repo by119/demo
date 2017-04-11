@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>canvas</title>
+	<link rel="stylesheet" href="css/demo.css">
+</head>
+<body>
+	<canvas width="800" height="600"></canvas>
+	<div></div>
+</body>
+<script>
+	var canvas=document.querySelector("canvas");
+	var ctx=canvas.getContext("2d");
+	ctx.fillStyle="pink";
+	ctx.arc(300, 300, 150, 0, 2*Math.PI);
+	ctx.fill();
+</script>
+</html>
